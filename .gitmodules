@@ -1,0 +1,3 @@
+[submodule "hivemind-server"]
+	path = hivemind-server
+	url = https://github.com/Sana-Kassamani/hivemind-server
