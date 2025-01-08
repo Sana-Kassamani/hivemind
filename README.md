@@ -5,9 +5,9 @@
 <!-- project philosophy -->
 <img src="./readme/title2.svg"/>
 
-> A mobile application for smart beehive management, assisting beekeepers in monitoring hive health and improving honey harvest.
+> HiveMind: The mobile app for innovative beekeeping.
 >
-> HiveMind tracks hive conditions with real-time monitoring via IoT devices. It provides AI insights on harvest timing, pest infestations, and weather conditions. Ultimately, it streamlines collaboration between hive owners and beekeepers.
+> Harness IoT devices to monitor hive health, identify pests through hive images, and access up-to-date weather insights for your apiary locations. Enhance collaboration between hive owners and ground beekeepers with task management and insightful statistics, all in one seamless platform.
 
 ### User Stories
 
@@ -34,7 +34,7 @@
 <!-- Tech stack -->
 <img src="./readme/title3.svg"/>
 
-### Hivemind is built using the following technologies:
+### HiveMind is built using the following technologies:
 
 - This project uses the [Flutter app development framework](https://flutter.dev/). Flutter is a cross-platform hybrid app development platform which allows us to use a single codebase for apps on mobile, desktop, and the web.
 - This project uses the [NestJS server-side framework](https://nestjs.com/), a progressive Node.js framework built with TypeScript and JavaScript, designed for building efficient, reliable, and scalable server-side applications.
