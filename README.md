@@ -13,20 +13,20 @@
 #### Owner
 
 - As an owner, I want to check my apiaries and hives and their location, so I can keep track of their conditions.
-- As an owner, I want to receive recommendations on hive activities, so I can ensure maximum harvest.
+- As an owner, I want to add/remove apiaries, hives and tasks, so I can manage my work efficiently.
 - As an owner, I want to assign tasks to beekeepers, so I can make sure the work gets done on time.
 
 #### Beekeeper
 
-- As a beekeeper, I want to receive hive conditions from sensors and manually add some, so I can track the hives health.
-- As a beekeeper, I want to upload hive pictures and audios, so I can monitor pests or abnormal activity.
-- As a beekeeper, I want to receive tasks from the owner and mark them as done, so I can keep the owner updated on my progress.
+- As a beekeeper, I want to receive hive conditions from sensors, so I can track the hives health.
+- As a beekeeper, I want to upload hive pictures, so I can monitor pests and diseases.
+- As a beekeeper, I want to receive tasks from the owner and comment on them, so I can keep the owner updated on my progress.
 
 #### Admin
 
 - As an admin, I want to track all users and their activity, so I can ensure app is used appropriately.
-- As an admin, I want to manage user accounts, so I can add, update, or deactivate users as needed.
-- As an admin, I want to view and edit details of all apiaries and hives, so I can maintain accurate records of the hives and their conditions.
+- As an admin, I want to manage user accounts, so I can activate or deactivate users as needed.
+- As an admin, I want to view details of all apiaries and hives, so I can maintain accurate records of the hives and their conditions.
 
 <br><br>
 
@@ -97,7 +97,7 @@
 | ![ApiaryScreen](./assets/images/Beekeeper/HivesPageBeekeeper.png)    | ![TasksScreen](./assets/images/Beekeeper/TasksPageBeekeeper.png) | ![AlertsScreen](./assets/images/Beekeeper/AlertsPage.jpg)   |
 | General Hive Details Screen                                          | Hive History Screen                                              | Image Analysis                                              |
 | ![DetailsScreen](./assets/images/Beekeeper/HiveDetailsBeekeeper.jpg) | ![HistoryScreen](./assets/gifs/HiveDetailsDemoCompressed.gif)    | ![AIAnalysis](./assets/gifs/AiAnalysisDemoCompressed.gif)   |
-| Settings Screen                                                      | Receiving Alerts                                                 | RComment on Task - Dark                                     |
+| Settings Screen                                                      | Receiving Alerts                                                 | Comment on Task - Dark                                      |
 | ![SettingsScreen](./assets/images/Beekeeper/SettingsPage.jpg)        | ![ReceiveAlerts](./assets/gifs/AlertsDemoCompressed.gif)         | ![CommentTask](./assets/gifs/TaskCommentDemoCompressed.gif) |
 
 ### Admin Screens (Web)
