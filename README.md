@@ -5,9 +5,8 @@
 <!-- project philosophy -->
 <img src="./readme/title2.svg"/>
 
-> HiveMind: The mobile app for innovative beekeeping.
->
-> Harness IoT devices to monitor hive health, identify pests through hive images, and access up-to-date weather insights for your apiary locations. Enhance collaboration between hive owners and ground beekeepers with task management and insightful statistics, all in one seamless platform.
+> HiveMind is a mobile app for modern beekeeping, utilizing IoT devices to monitor hive health, detect pests through hive images, and provide up-to-date weather insights for your apiary locations.
+> It also fosters collaboration between hive owners and ground beekeepers, all within a single platform.
 
 ### User Stories
 
@@ -44,22 +43,22 @@
 - The machine learning model is served using [Flask](https://flask.palletsprojects.com/en/stable/), a lightweight Python web framework ideal for creating APIs and serving models efficiently.
 - To send local push notifications, the app uses the [flutter_local_notifications](https://pub.dev/packages/flutter_local_notifications) package which supports Android, iOS, and macOS.
 
-<!-- - The app uses the font ["Work Sans"](https://fonts.google.com/specimen/Work+Sans) as its main font, and the design of the app adheres to the material design guidelines. -->
-
 <br><br>
 
 <!-- UI UX -->
 <img src="./readme/title4.svg"/>
 
-> We designed HiveMind using wireframes and mockups, iterating on the design until we reached the ideal layout for easy navigation and a seamless user experience.
+> HiveMind was designed on Figma, starting with wireframes and progressing to mockups, with iterations focused on achieving smooth navigation and a seamless user experience.
 
 - Project Figma design [figma](https://www.figma.com/design/AIptVTX0dJFBQaGKdf3dAY/UI-UX-Assignments?node-id=0-1&node-type=canvas&t=0t6X8FZMun35SXlq-0)
 
 ### Mockups
 
-| Home screen                             | Menu Screen                           | Order Screen                          |
-| --------------------------------------- | ------------------------------------- | ------------------------------------- |
-| ![Landing](./readme/demo/1440x1024.png) | ![fsdaf](./readme/demo/1440x1024.png) | ![fsdaf](./readme/demo/1440x1024.png) |
+| Apiaries Screen - Owner                                                 | Hives Screen - Beekeeper                                                  | Tasks Screen - Beekeeper                                                |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| ![ApiariesFrame](./assets/images/FigFrames/Apiary%20Screen%20Owner.png) | ![HivesFrame](./assets/images/FigFrames/Details%20Screen%20Beekeeper.png) | ![TasksFrame](./assets/images/FigFrames/Tasks%20Screen%20Beekeeper.png) |
+| Add Apiary - Owner                                                      | Add Hive - Owner                                                          | Add Task - Owner                                                        |
+| ![AddApiary](./assets/images/FigFrames/Add%20Apiary.png)                | ![AddHive](./assets/images/FigFrames/Add%20Hive.png)                      | ![AddTask](./assets/images/FigFrames/Add%20Task.png)                    |
 
 <br><br>
 
@@ -68,86 +67,216 @@
 
 ### Architecting Data Excellence: Innovative Database Design Strategies:
 
-- Insert ER Diagram here
+![DatabaseSchema](./assets/images/MongoDbSchema.png)
 
 <br><br>
 
 <!-- Implementation -->
 <img src="./readme/title6.svg"/>
 
-### User Screens (Mobile)
+| Onboarding Screen 1                                         | Onboarding Screen 2                                         | Login screen                              |
+| ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------- |
+| ![OnboardingScreen1](./assets/images/OnboardingScreen1.jpg) | ![OnboardingScreen2](./assets/images/OnboardingScreen2.jpg) | ![LoginScreen](./assets/images/Login.jpg) |
 
-| Login screen                              | Register screen                         | Landing screen                          | Loading screen                          |
-| ----------------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-| ![Landing](https://placehold.co/900x1600) | ![fsdaf](https://placehold.co/900x1600) | ![fsdaf](https://placehold.co/900x1600) | ![fsdaf](https://placehold.co/900x1600) |
-| Home screen                               | Menu Screen                             | Order Screen                            | Checkout Screen                         |
-| ![Landing](https://placehold.co/900x1600) | ![fsdaf](https://placehold.co/900x1600) | ![fsdaf](https://placehold.co/900x1600) | ![fsdaf](https://placehold.co/900x1600) |
+### Owner Screens (Mobile)
+
+| Apiaries Screen                                                 | Hives of Apiary Screen                                          | Tasks of Apiary Screen                                           |
+| --------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------- |
+| ![ApiariesScreen](./assets/images/Owner/ApiariesOwner.png)      | ![HivesScreen](./assets/images/Owner/HivesOfApiaryOwner.jpg)    | ![TasksScreen](./assets/images/Owner/TasksOfApiaryOwner.jpg)     |
+| Add Apiary                                                      | Add Hive                                                        | Add Task                                                         |
+| ![AddApiary](./assets/gifs/addApiaryDemo_gif.gif)               | ![AddHive](./assets/gifs/AddHiveDemoCompressed.gif)             | ![AddTask](./assets/gifs/AddTaskDemoCompressed.gif)              |
+| Delete Apiary                                                   | Map Screen                                                      | Complete Task                                                    |
+| ![DeleteApiary](./assets/gifs/DeleteApiaryDemoCompressed.gif)   | ![MapScreen](./assets/gifs/MapDemoCompressed.gif)               | ![CompleteTask](./assets/gifs/CompleteTaskDemoCompressed.gif)    |
+| General Hive Details Screen - Dark                              | Hive History Screen - Dark                                      | Empty Alerts Screen - Dark                                       |
+| ![DarkDetailsScreen](./assets/images/Owner/HiveDetailsDark.jpg) | ![DarkHistoryScreen](./assets/images/Owner/HiveHistoryDark.jpg) | ![DarkAlertsScreen](./assets/images/Owner/EmptyStateDark%20.jpg) |
+
+### Beekeeper Screens (Mobile)
+
+| Apiary Screen                                                        | Tasks Screen                                                     | Alerts Screen                                               |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------- |
+| ![ApiaryScreen](./assets/images/Beekeeper/HivesPageBeekeeper.png)    | ![TasksScreen](./assets/images/Beekeeper/TasksPageBeekeeper.png) | ![AlertsScreen](./assets/images/Beekeeper/AlertsPage.jpg)   |
+| General Hive Details Screen                                          | Hive History Screen                                              | Image Analysis                                              |
+| ![DetailsScreen](./assets/images/Beekeeper/HiveDetailsBeekeeper.jpg) | ![HistoryScreen](./assets/gifs/HiveDetailsDemoCompressed.gif)    | ![AIAnalysis](./assets/gifs/AiAnalysisDemoCompressed.gif)   |
+| Settings Screen                                                      | Receiving Alerts                                                 | RComment on Task - Dark                                     |
+| ![SettingsScreen](./assets/images/Beekeeper/SettingsPage.jpg)        | ![ReceiveAlerts](./assets/gifs/AlertsDemoCompressed.gif)         | ![CommentTask](./assets/gifs/TaskCommentDemoCompressed.gif) |
 
 ### Admin Screens (Web)
 
-| Login screen                            | Register screen                       | Landing screen                        |
-| --------------------------------------- | ------------------------------------- | ------------------------------------- |
-| ![Landing](./readme/demo/1440x1024.png) | ![fsdaf](./readme/demo/1440x1024.png) | ![fsdaf](./readme/demo/1440x1024.png) |
-| Home screen                             | Menu Screen                           | Order Screen                          |
-| ![Landing](./readme/demo/1440x1024.png) | ![fsdaf](./readme/demo/1440x1024.png) | ![fsdaf](./readme/demo/1440x1024.png) |
+| Login Screen                                          | Users Screen                                                    |
+| ----------------------------------------------------- | --------------------------------------------------------------- |
+| ![LoginScreen](./assets/images/Admin/Login.png)       | ![UsersScreen](./assets/images/Admin/Users.png)                 |
+| Apiaries Screen                                       | Apiary Details Screen                                           |
+| ![ApiariesScreen](./assets/images/Admin/Apiaries.png) | ![ApiaryDetailsScreen](./assets/images/Admin/ApiaryDetails.png) |
 
 <br><br>
 
-<!-- Prompt Engineering -->
+<!-- IoT Simualtion -->
 <img src="./readme/title7.svg"/>
 
-### Mastering AI Interaction: Unveiling the Power of Prompt Engineering:
+### Smart IoT Simulation: Transforming Connectivity into Actionable Insights
 
-- This project uses advanced prompt engineering techniques to optimize the interaction with natural language processing models. By skillfully crafting input instructions, we tailor the behavior of the models to achieve precise and efficient language understanding and generation for various tasks and preferences.
+- This project incorporates IoT devices to establish a connection between the mobile application and real-life beehives.
+- The sensors employed include the DHT22, which measures temperature and humidity, and a load cell, which detects weight changes critical for determining the optimal timing for honey harvesting. These sensors interface with the ESP8266 module and periodically update the hive conditions in the application.
 
-<br><br>
-
-<!-- AWS Deployment -->
-<img src="./readme/title8.svg"/>
-
-### Efficient AI Deployment: Unleashing the Potential with AWS Integration:
-
-- This project leverages AWS deployment strategies to seamlessly integrate and deploy natural language processing models. With a focus on scalability, reliability, and performance, we ensure that AI applications powered by these models deliver robust and responsive solutions for diverse use cases.
-
-<br><br>
-
-<!-- Unit Testing -->
-<img src="./readme/title9.svg"/>
-
-### Precision in Development: Harnessing the Power of Unit Testing:
-
-- This project employs rigorous unit testing methodologies to ensure the reliability and accuracy of code components. By systematically evaluating individual units of the software, we guarantee a robust foundation, identifying and addressing potential issues early in the development process.
+| Setup                                     | Sensors                                     | Setup Without Hive                         |
+| ----------------------------------------- | ------------------------------------------- | ------------------------------------------ |
+| ![Setup](./assets/images/IoT/HiveIoT.png) | ![Sensors](./assets/images/IoT/Sensors.png) | ![Setup](./assets/images/IoT/IoTSetup.png) |
 
 <br><br>
 
 <!-- How to run -->
 <img src="./readme/title10.svg"/>
 
-> To set up Coffee Express locally, follow these steps:
+> To set up HiveMind locally, follow these steps:
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-
 - npm
+
   ```sh
   npm install npm@latest -g
   ```
 
+- Flutter SDK from official documentation
+- Python 3.10 from official documentation
+- Arduino IDE or PlatformIO Extension in Visual Studio
+- ESP8266 module
+- Google Cloud Platform project with Places API and Maps SDK enabled
+- Firebase CLI
+- Firebase Project for notifications
+
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+#### Cloning the Repository
 
-1. Get a free API Key at [example](https://example.com)
-2. Clone the repo
-   git clone [github](https://github.com/your_username_/Project-Name.git)
-3. Install NPM packages
+1. Run the following command to clone the repository and all its submodules
+
+   ```sh
+   git clone --recurse-submodules [github](https://github.com/Sana-Kassamani/hivemind.git)
+   ```
+
+#### Server Configuration
+
+1. Navigate to hivemind-server directory
+
+   ```sh
+   cd hivemind-server
+   ```
+
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = "ENTER YOUR API";
+3. Run the following command and fill the necessary values in the created .env file
+   ```sh
+   cp .env.example .env
+   ```
+4. Navigate to your Firebase project in Firebase Console and maintain a Firebase Admin SDK for Nodejs, downloaded as a JSON file.
+   Populate the .env file created with the current values from the downloaded JSON file.
+5. Run Nestjs
+
+   ```sh
+   npm run start:dev
    ```
 
-Now, you should be able to run Coffee Express locally and explore its features.
+#### Application Configuration
+
+1. Install Flutter SDK
+
+2. Navigate to hivemind-app directory
+
+   ```sh
+   cd hivemind-app
+   ```
+
+3. Install pub packages from pubspec.yaml
+
+   ```sh
+   flutter pub get
+   ```
+
+4. Create a .env file and define URL with the url of your server and the API Key of your Google Cloud Platform
+
+   ```js
+   URL = "http://<IP-address>:<Port>";
+   GOOGLE_API_KEY = "YOUR-KEY";
+   ```
+
+5. Make sure Firebase CLI is installed on your machine and run the following commands (Flutterfire will help you connect to your firebase project in the terminal.)
+   ```sh
+   dart pub global activate flutterfire_cli
+      flutterfire configure
+   ```
+6. Run Flutter
+   ```sh
+   flutter run
+   ```
+
+#### Admin Panel Configuration
+
+1. Navigate to hivemind-admin_panel directory
+
+   ```sh
+   cd hivemind-admin_panel
+   ```
+
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run the following command and fill the necessary values ( server url ) in the created .env file
+   ```sh
+   cp .env.example .env
+   ```
+4. Your database shall be populated with an admin document in users.
+
+5. Run project
+
+   ```sh
+   npm run start
+   ```
+
+#### Flask Configuration
+
+1. Navigate to hivemind-flask directory
+
+   ```sh
+   cd hivemind-flask
+   ```
+
+2. Create and activate a virtual environment to install dependencies ( The Following commands are for Windows users)
+   ```sh
+   python -m venv venv
+   .\venv\Scripts\activate
+   ```
+3. Install dependencies from requirements.txt file
+   ```sh
+   pip install -r requirements.txt
+   ```
+4. Run the server
+   ```sh
+   flask run
+   ```
+
+#### Arduino Configuration
+
+1. Navigate to hivemind-arduino directory
+
+   ```sh
+   cd hivemind-arduino
+   ```
+
+2. Install the dependencies listed in platformio.ini file under lib_deps
+
+3. Set the variables in wifi.cpp file according to your network and sever
+
+   ```cpp
+   const char* ssid = "<Network-ssid>";
+   const char* password = "<Network-password>";
+   const char* serverName = "<Server_url";
+   ```
+
+4. Plug the module to your laptop and build the project. Enable serial monitor to read the prints.
+5. Replace sensor reading with dummy values to simulate functionality.
+
+   Now, you should be able to run HiveMind locally and explore its features.
