@@ -57,8 +57,6 @@
 | Apiaries Screen - Owner                                                 | Hives Screen - Beekeeper                                                  | Tasks Screen - Beekeeper                                                |
 | ----------------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | ![ApiariesFrame](./assets/images/FigFrames/Apiary%20Screen%20Owner.png) | ![HivesFrame](./assets/images/FigFrames/Details%20Screen%20Beekeeper.png) | ![TasksFrame](./assets/images/FigFrames/Tasks%20Screen%20Beekeeper.png) |
-| Add Apiary - Owner                                                      | Add Hive - Owner                                                          | Add Task - Owner                                                        |
-| ![AddApiary](./assets/images/FigFrames/Add%20Apiary.png)                | ![AddHive](./assets/images/FigFrames/Add%20Hive.png)                      | ![AddTask](./assets/images/FigFrames/Add%20Task.png)                    |
 
 <br><br>
 
@@ -102,11 +100,12 @@
 
 ### Admin Screens (Web)
 
-| Login Screen                                          | Users Screen                                                    |
-| ----------------------------------------------------- | --------------------------------------------------------------- |
-| ![LoginScreen](./assets/images/Admin/Login.png)       | ![UsersScreen](./assets/images/Admin/Users.png)                 |
-| Apiaries Screen                                       | Apiary Details Screen                                           |
-| ![ApiariesScreen](./assets/images/Admin/Apiaries.png) | ![ApiaryDetailsScreen](./assets/images/Admin/ApiaryDetails.png) |
+| Login Screen                                                    | Users Screen                                                    |
+| --------------------------------------------------------------- | --------------------------------------------------------------- |
+| ![LoginScreen](./assets/images/Admin/Login.png)                 | ![UsersScreen](./assets/images/Admin/Users.png)                 |
+| Apiaries Screen                                                 | Apiary Details Screen                                           |
+| --------------------------------------------------------------- | --------------------------------------------------------------- |
+| ![ApiariesScreen](./assets/images/Admin/Apiaries.png)           | ![ApiaryDetailsScreen](./assets/images/Admin/ApiaryDetails.png) |
 
 <br><br>
 
