@@ -1,3 +1,15 @@
 [submodule "hivemind-server"]
 	path = hivemind-server
 	url = https://github.com/Sana-Kassamani/hivemind-server
+[submodule "hivemind-app"]
+	path = hivemind-app
+	url = https://github.com/Sana-Kassamani/hivemind-app
+[submodule "hivemind-admin_panel"]
+	path = hivemind-admin_panel
+	url = https://github.com/Sana-Kassamani/hivemind-admin_panel
+[submodule "hivemind-arduino"]
+	path = hivemind-arduino
+	url = https://github.com/Sana-Kassamani/hivemind-arduino
+[submodule "hivemind-flask"]
+	path = hivemind-flask
+	url = https://github.com/Sana-Kassamani/hivemind-flask

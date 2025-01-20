@@ -195,17 +195,16 @@
    flutter pub get
    ```
 
-4. Create a .env file and define URL with the url of your server and the API Key of your Google Cloud Platform
+4. Run the following command and fill the necessary values in the created .env file
 
-   ```js
-   URL = "http://<IP-address>:<Port>";
-   GOOGLE_API_KEY = "YOUR-KEY";
+   ```sh
+   cp .env.example .env
    ```
 
 5. Make sure Firebase CLI is installed on your machine and run the following commands (Flutterfire will help you connect to your firebase project in the terminal.)
    ```sh
    dart pub global activate flutterfire_cli
-      flutterfire configure
+   flutterfire configure
    ```
 6. Run Flutter
    ```sh
@@ -231,7 +230,6 @@
 4. Your database shall be populated with an admin document in users.
 
 5. Run project
-
    ```sh
    npm run start
    ```
@@ -244,7 +242,7 @@
    cd hivemind-flask
    ```
 
-2. Create and activate a virtual environment to install dependencies ( The Following commands are for Windows users)
+2. Create and activate a virtual environment to install dependencies ( The following commands are for Windows users)
    ```sh
    python -m venv venv
    .\venv\Scripts\activate
