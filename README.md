@@ -36,12 +36,15 @@
 ### HiveMind is built using the following technologies:
 
 - This project uses the [Flutter app development framework](https://flutter.dev/). Flutter is a cross-platform hybrid app development platform which allows us to use a single codebase for apps on mobile, desktop, and the web.
-- This project uses the [NestJS server-side framework](https://nestjs.com/), a progressive Node.js framework built with TypeScript and JavaScript, designed for building efficient, reliable, and scalable server-side applications.
+- This project uses the [NestJS server-side framework](https://nestjs.com/), a Node.js framework built with TypeScript and JavaScript, designed for building efficient, reliable, and scalable server-side applications.
 - For database operations, the app utilizes [MongoDB](https://www.mongodb.com/), a NoSQL database that supports flexible and scalable data storage, along with [MongoDB Compass](https://www.mongodb.com/products/tools/compass) for an intuitive graphical interface to manage and visualize the database.
 - For IoT integration, the app utilizes the ESP12E-8266 module, a low-cost Wi-Fi module developed by [Espressif System](https://www.espressif.com/en/products/modules/esp8266) and ideal for IoT applications, offering built-in Wi-Fi and GPIO capabilities. The module was programmed using [PlatformIO](https://platformio.org/), a VS Code extension for firmware development.
 - The admin panel was developed using [ReactJS](https://react.dev/), a popular JavaScript library for building dynamic, responsive, and efficient single-page applications.
 - The machine learning model is served using [Flask](https://flask.palletsprojects.com/en/stable/), a lightweight Python web framework ideal for creating APIs and serving models efficiently.
+- The app integrates [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging), a robust solution for sending notifications, to alert users to extreme hive conditions.
 - To send local push notifications, the app uses the [flutter_local_notifications](https://pub.dev/packages/flutter_local_notifications) package which supports Android, iOS, and macOS.
+- The app employs [Google Maps SDK](https://developers.google.com/maps/documentation/android-sdk/overview) to visualize apiaries' locations on Google Maps.
+- The app uses [Open Weather Api](https://openweathermap.org/api) to fetch weather data at each apiary's location.
 
 <br><br>
 
@@ -63,7 +66,7 @@
 <!-- Database Design -->
 <img src="./readme/title5.svg"/>
 
-### Architecting Data Excellence: Innovative Database Design Strategies:
+## Database includes 2 standalone schemas Apiary and User, each having additional embedded schemas as shown below.
 
 ![DatabaseSchema](./assets/images/MongoDbSchema.png)
 
@@ -72,40 +75,31 @@
 <!-- Implementation -->
 <img src="./readme/title6.svg"/>
 
-| Onboarding Screen 1                                         | Onboarding Screen 2                                         | Login screen                              |
-| ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------- |
-| ![OnboardingScreen1](./assets/images/OnboardingScreen1.jpg) | ![OnboardingScreen2](./assets/images/OnboardingScreen2.jpg) | ![LoginScreen](./assets/images/Login.jpg) |
-
 ### Owner Screens (Mobile)
 
-| Apiaries Screen                                                 | Hives of Apiary Screen                                          | Tasks of Apiary Screen                                           |
-| --------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------------- |
-| ![ApiariesScreen](./assets/images/Owner/ApiariesOwner.png)      | ![HivesScreen](./assets/images/Owner/HivesOfApiaryOwner.jpg)    | ![TasksScreen](./assets/images/Owner/TasksOfApiaryOwner.jpg)     |
-| Add Apiary                                                      | Add Hive                                                        | Add Task                                                         |
-| ![AddApiary](./assets/gifs/addApiaryDemo_gif.gif)               | ![AddHive](./assets/gifs/AddHiveDemoCompressed.gif)             | ![AddTask](./assets/gifs/AddTaskDemoCompressed.gif)              |
-| Delete Apiary                                                   | Map Screen                                                      | Complete Task                                                    |
-| ![DeleteApiary](./assets/gifs/DeleteApiaryDemoCompressed.gif)   | ![MapScreen](./assets/gifs/MapDemoCompressed.gif)               | ![CompleteTask](./assets/gifs/CompleteTaskDemoCompressed.gif)    |
-| General Hive Details Screen - Dark                              | Hive History Screen - Dark                                      | Empty Alerts Screen - Dark                                       |
-| ![DarkDetailsScreen](./assets/images/Owner/HiveDetailsDark.jpg) | ![DarkHistoryScreen](./assets/images/Owner/HiveHistoryDark.jpg) | ![DarkAlertsScreen](./assets/images/Owner/EmptyStateDark%20.jpg) |
+| Apiaries Screen                                               | Hives of Apiary Screen                                       | Hive Details Screen                                           |
+| ------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------- |
+| ![ApiariesScreen](./assets/images/Owner/ApiariesOwner.png)    | ![HivesScreen](./assets/images/Owner/HivesOfApiaryOwner.jpg) | ![DetailsScreen](./assets/images/Owner/HiveDetailsOwner.png)  |
+| Add Apiary                                                    | Add Hive                                                     | Add Task                                                      |
+| ![AddApiary](./assets/gifs/addApiaryDemo_gif.gif)             | ![AddHive](./assets/gifs/AddHiveDemoCompressed.gif)          | ![AddTask](./assets/gifs/AddTaskDemoCompressed.gif)           |
+| Delete Apiary                                                 | Map Screen                                                   | Complete Task                                                 |
+| ![DeleteApiary](./assets/gifs/DeleteApiaryDemoCompressed.gif) | ![MapScreen](./assets/gifs/MapDemoCompressed.gif)            | ![CompleteTask](./assets/gifs/CompleteTaskDemoCompressed.gif) |
 
 ### Beekeeper Screens (Mobile)
 
-| Apiary Screen                                                        | Tasks Screen                                                     | Alerts Screen                                               |
-| -------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------- |
-| ![ApiaryScreen](./assets/images/Beekeeper/HivesPageBeekeeper.png)    | ![TasksScreen](./assets/images/Beekeeper/TasksPageBeekeeper.png) | ![AlertsScreen](./assets/images/Beekeeper/AlertsPage.jpg)   |
-| General Hive Details Screen                                          | Hive History Screen                                              | Image Analysis                                              |
-| ![DetailsScreen](./assets/images/Beekeeper/HiveDetailsBeekeeper.jpg) | ![HistoryScreen](./assets/gifs/HiveDetailsDemoCompressed.gif)    | ![AIAnalysis](./assets/gifs/AiAnalysisDemoCompressed.gif)   |
-| Settings Screen                                                      | Receiving Alerts                                                 | Comment on Task - Dark                                      |
-| ![SettingsScreen](./assets/images/Beekeeper/SettingsPage.jpg)        | ![ReceiveAlerts](./assets/gifs/AlertsDemoCompressed.gif)         | ![CommentTask](./assets/gifs/TaskCommentDemoCompressed.gif) |
+| Hive History Screen                                           | Image Analysis                                                   | Receiving Alerts                                            |
+| ------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------- |
+| ![HistoryScreen](./assets/gifs/HiveDetailsDemoCompressed.gif) | ![AIAnalysis](./assets/gifs/AiAnalysisDemoCompressed.gif)        | ![ReceiveAlerts](./assets/gifs/AlertsDemoCompressed.gif)    |
+| Toggle Dark Mode                                              | Hive Details Dark                                                | Comment on Task - Dark                                      |
+| ![DarkMode](./assets/gifs/ToggleDarkModeCompressed.gif)       | ![DetailsDark](./assets/images/Beekeeper/DetailsDarkResized.jpg) | ![CommentTask](./assets/gifs/CommentTaskDarkCompressed.gif) |
 
 ### Admin Screens (Web)
 
-| Login Screen                                                    | Users Screen                                                    |
-| --------------------------------------------------------------- | --------------------------------------------------------------- |
-| ![LoginScreen](./assets/images/Admin/Login.png)                 | ![UsersScreen](./assets/images/Admin/Users.png)                 |
-| Apiaries Screen                                                 | Apiary Details Screen                                           |
-| --------------------------------------------------------------- | --------------------------------------------------------------- |
-| ![ApiariesScreen](./assets/images/Admin/Apiaries.png)           | ![ApiaryDetailsScreen](./assets/images/Admin/ApiaryDetails.png) |
+| Login Screen                                          | Users Screen                                                    |
+| ----------------------------------------------------- | --------------------------------------------------------------- |
+| ![LoginScreen](./assets/images/Admin/Login.png)       | ![UsersScreen](./assets/images/Admin/Users.png)                 |
+| Apiaries Screen                                       | Apiary Details Screen                                           |
+| ![ApiariesScreen](./assets/images/Admin/Apiaries.png) | ![ApiaryDetailsScreen](./assets/images/Admin/ApiaryDetails.png) |
 
 <br><br>
 
