@@ -13,7 +13,7 @@
 #### Owner
 
 - As an owner, I want to check my apiaries and hives and their location, so I can keep track of their conditions.
-- As an owner, I want to add/remove apiaries, hives and tasks, so I can manage my work efficiently.
+- As an owner, I want to add/remove apiaries and hives, so I can manage my apiaries efficiently.
 - As an owner, I want to assign tasks to beekeepers, so I can make sure the work gets done on time.
 
 #### Beekeeper
@@ -24,7 +24,7 @@
 
 #### Admin
 
-- As an admin, I want to track all users and their activity, so I can ensure app is used appropriately.
+- As an admin, I want to track all registered users in the system, so I can ensure effective user management the app.
 - As an admin, I want to manage user accounts, so I can activate or deactivate users as needed.
 - As an admin, I want to view details of all apiaries and hives, so I can maintain accurate records of the hives and their conditions.
 
@@ -36,7 +36,7 @@
 ### HiveMind is built using the following technologies:
 
 - This project uses the [Flutter app development framework](https://flutter.dev/). Flutter is a cross-platform hybrid app development platform which allows us to use a single codebase for apps on mobile, desktop, and the web.
-- This project uses the [NestJS server-side framework](https://nestjs.com/), a Node.js framework built with TypeScript and JavaScript, designed for building efficient, reliable, and scalable server-side applications.
+- This project uses the [NestJS server-side framework](https://nestjs.com/), a Node.js framework built with TypeScript and JavaScript, designed for building efficient and scalable server-side applications.
 - For database operations, the app utilizes [MongoDB](https://www.mongodb.com/), a NoSQL database that supports flexible and scalable data storage, along with [MongoDB Compass](https://www.mongodb.com/products/tools/compass) for an intuitive graphical interface to manage and visualize the database.
 - For IoT integration, the app utilizes the ESP12E-8266 module, a low-cost Wi-Fi module developed by [Espressif System](https://www.espressif.com/en/products/modules/esp8266) and ideal for IoT applications, offering built-in Wi-Fi and GPIO capabilities. The module was programmed using [PlatformIO](https://platformio.org/), a VS Code extension for firmware development.
 - The admin panel was developed using [ReactJS](https://react.dev/), a popular JavaScript library for building dynamic, responsive, and efficient single-page applications.
@@ -51,7 +51,7 @@
 <!-- UI UX -->
 <img src="./readme/title4.svg"/>
 
-> HiveMind was designed on Figma, starting with wireframes and progressing to mockups, with iterations focused on achieving smooth navigation and a seamless user experience.
+> HiveMind was designed on Figma, starting with wireframes and progressing to mockups, with iterations focused on achieving smooth navigation and seamless user experience.
 
 - Project Figma design [figma](https://www.figma.com/design/AIptVTX0dJFBQaGKdf3dAY/UI-UX-Assignments?node-id=0-1&node-type=canvas&t=0t6X8FZMun35SXlq-0)
 
@@ -117,6 +117,21 @@
 
 <br><br>
 
+<!-- AWS Deployment -->
+<img src="./readme/title8.svg"/>
+
+### Unleashing the Potential with AWS Integration:
+
+- This project's server [hivemind_server](https://github.com/Sana-Kassamani/hivemind-server) is deployed on Amazon Web Services (AWS) EC2, ensuring scalability and performance. An EC2 instance was allocated to serve as the hosting environment for the application, with the necessary software and dependencies installed. Testing the server with API calls was done using Postman.
+
+  | Login                                                      | Create Apiary                                                |
+  | ---------------------------------------------------------- | ------------------------------------------------------------ |
+  | ![LoginApi](./assets/images/Postman/Login.png)             | ![CreateApiaryApi](./assets/images/Postman/CreateApiary.png) |
+  | Comment Task                                               | Get Apiaries                                                 |
+  | ![CommentTaskApi](./assets/images/Postman/CommentTask.png) | ![Get Apiaries](./assets/images/Postman/GetApiaries.png)     |
+
+<br><br>
+
 <!-- How to run -->
 <img src="./readme/title10.svg"/>
 
@@ -157,13 +172,17 @@
    ```
 
 2. Install NPM packages
+
    ```sh
    npm install
    ```
+
 3. Run the following command and fill the necessary values in the created .env file
+
    ```sh
    cp .env.example .env
    ```
+
 4. Navigate to your Firebase project in Firebase Console and maintain a Firebase Admin SDK for Nodejs, downloaded as a JSON file.
    Populate the .env file created with the current values from the downloaded JSON file.
 5. Run Nestjs
@@ -194,12 +213,20 @@
    cp .env.example .env
    ```
 
-5. Make sure Firebase CLI is installed on your machine and run the following commands (Flutterfire will help you connect to your firebase project in the terminal.)
+5. Create a secrets.defaults.properties file in ./android and define your Google Maps Api key as MAPS_API_KEY
+
+   ```sh
+   MAPS_API_KEY = "Maps Api Key"
+   ```
+
+6. Make sure Firebase CLI is installed on your machine and run the following commands (Flutterfire will help you connect to your firebase project in the terminal)
+
    ```sh
    dart pub global activate flutterfire_cli
    flutterfire configure
    ```
-6. Run Flutter
+
+7. Run Flutter
    ```sh
    flutter run
    ```
@@ -213,13 +240,17 @@
    ```
 
 2. Install NPM packages
+
    ```sh
    npm install
    ```
+
 3. Run the following command and fill the necessary values ( server url ) in the created .env file
+
    ```sh
    cp .env.example .env
    ```
+
 4. Your database shall be populated with an admin document in users.
 
 5. Run project
@@ -236,15 +267,20 @@
    ```
 
 2. Create and activate a virtual environment to install dependencies ( The following commands are for Windows users)
+
    ```sh
    python -m venv venv
    .\venv\Scripts\activate
    ```
+
 3. Install dependencies from requirements.txt file
+
    ```sh
    pip install -r requirements.txt
    ```
+
 4. Run the server
+
    ```sh
    flask run
    ```
