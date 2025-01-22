@@ -106,8 +106,6 @@
 <!-- IoT Simualtion -->
 <img src="./readme/title7.svg"/>
 
-### Smart IoT Simulation: Transforming Connectivity into Actionable Insights
-
 - This project incorporates IoT devices to establish a connection between the mobile application and real-life beehives.
 - The sensors employed include the DHT22, which measures temperature and humidity, and a load cell, which detects weight changes critical for determining the optimal timing for honey harvesting. These sensors interface with the ESP8266 module and periodically update the hive conditions in the application.
 
@@ -119,8 +117,6 @@
 
 <!-- AWS Deployment -->
 <img src="./readme/title8.svg"/>
-
-### Unleashing the Potential with AWS Integration:
 
 - This project's server [hivemind_server](https://github.com/Sana-Kassamani/hivemind-server) is deployed on Amazon Web Services (AWS) EC2, ensuring scalability and performance. An EC2 instance was allocated to serve as the hosting environment for the application, with the necessary software and dependencies installed. Testing the server with API calls was done using Postman.
 
